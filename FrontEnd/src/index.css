@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+:root{
+    --textcolor: #ffffff;
+    --animation: #E38E49;
+    --buttoncolor: #1F509A;
+}
+
+body{
+    background-color: #0f0f0f;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px; 
+    color: var(--textcolor);
+    background-attachment: fixed;
+}
+
+/* NAVIGATION START */
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.components ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline-animate {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+  
+.underline-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--animation);
+    transition: width 0.3s ease;
+}
+  
+.underline-animate:hover::after {
+    width: 100%;
+}
+
+/* NAVIGATION END */
+
+/* HOME START */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-div{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background-color: var(--animation);
+    
+    border-radius: 20px;
+    transform: rotate(45deg)
+}
+
+.home .home-div:first-child{
+    transform: rotate(90deg);
+    /* background-color: gray; */
+
+    background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.home .home-div:nth-last-child(1){
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.home .home-h1{
+    color: white;
+    font-size: 4rem;
+    z-index: 9;
+}
+
+.home .home-h1:nth-last-child(1){
+    transform: translate(-560px, 310px);
+}
+
+@keyframes rotateFloat {
+    0% { transform: rotate(0deg) translateY(0); }
+    50% { transform: rotate(0deg) translateY(-10px); }
+    100% { transform: rotate(0deg) translateY(0); }
+  }
+
+.home .home-h1:nth-last-child(2){
+    font-family: "Londrina Outline", sans-serif;
+    animation: rotateFloat 5s ease-in-out infinite;
+    font-size: 8rem;
+}
+
+.home .home-h1:nth-last-child(3){
+    transform: translate(560px, -310px);
+}
+
+/* HOME END */
