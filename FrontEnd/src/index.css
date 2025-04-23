@@ -99,29 +99,13 @@ body{
 }
 
 .home .home-h1{
-    color: white;
-    font-size: 4rem;
-    z-index: 9;
-}
-
-.home .home-h1:nth-last-child(1){
-    transform: translate(-560px, 310px);
-}
-
-@keyframes rotateFloat {
-    0% { transform: rotate(0deg) translateY(0); }
-    50% { transform: rotate(0deg) translateY(-10px); }
-    100% { transform: rotate(0deg) translateY(0); }
-  }
-
-.home .home-h1:nth-last-child(2){
+    transform: translate(-320px, -150px);
     font-family: "Londrina Outline", sans-serif;
-    animation: rotateFloat 5s ease-in-out infinite;
     font-size: 8rem;
 }
 
-.home .home-h1:nth-last-child(3){
-    transform: translate(560px, -310px);
+.home .home-h1:nth-last-child(1){
+    transform: translate(260px, -150px);
 }
 
 /* HOME END */

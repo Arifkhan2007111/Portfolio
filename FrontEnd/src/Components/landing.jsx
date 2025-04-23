@@ -17,9 +17,8 @@ const Landing = ()=>{
             <div className="home">
                 <div className="home-div"></div>
                 <div className="home-div"></div>
-                <h1 className="home-h1">MD ARIF KHAN</h1>
                 <h1 className="home-h1">HEY, I AM ARIF</h1>
-                <h1 className="home-h1">MD ARIF KHAN</h1>
+                <h1 className="home-h1">A DEVLOPER</h1>
             </div>
 
             <div className="about">
