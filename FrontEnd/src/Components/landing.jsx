@@ -1,5 +1,7 @@
 import React from "react";
 
+import portfolio from "../assets/Portfolio-img.jpg"
+
 const Landing = () => {
   return (
     <>
@@ -39,15 +41,30 @@ const Landing = () => {
         </div>
 
         <div className="about">
-          <p>
-            I use MongoDB, Express.js, React.js, and Node.js to create
-            cutting-edge, responsive online apps. From clear user interface to
-            backend logic, my goal is to create experiences that are quick, easy
-            to use, and functional. To keep up with the latest technological
-            advancements, I also strive to enhance my knowledge of data
-            structures and algorithms and investigate the potential of
-            artificial intelligence and machine learning.
-          </p>
+            <div className="main-para">
+                <p>
+                    I use MongoDB, Express.js, React.js, and Node.js to create
+                    cutting-edge, responsive online apps. From clear user interface to
+                    backend logic, my goal is to create experiences that are quick, easy
+                    to use, and functional. To keep up with the latest technological
+                    advancements, I also strive to enhance my knowledge of data
+                    structures and algorithms and investigate the potential of
+                    artificial intelligence and machine learning.
+                </p>
+            </div>
+            <div className="part-start">ABOUT ME</div>
+            <div className="about-me">
+                <div className="about-img">
+                    <img src={portfolio}></img>
+                </div>
+                <div className="about-para">
+                    <p>Hi, I'm Arif—a passionate and self-motivated full-stack web developer with a Diploma in Computer Science & Engineering from Dr. C.V. Raman University. I specialize in creating clean, responsive, and scalable web applications using modern technologies like the MERN stack. I completed a hands-on internship at the Academy of Skill Development, where I built full-stack projects, designed RESTful APIs, and collaborated using Git and GitHub.<br /><br />
+
+I’ve actively participated in both a hackathon and an ideathon, contributing to innovative solutions like GreenBridge, a project focused on sustainability through technology. Currently, I’m diving into Artificial Intelligence and Machine Learning, learning core concepts, algorithms, and Python-based implementation. I’m also building a solid foundation in Data Structures and Algorithms to improve my problem-solving and interview readiness.<br /><br />
+
+In parallel, I'm crafting a custom dark-themed portfolio website with smooth animations, written entirely in manual CSS. I love experimenting with new tools and frameworks, and I’m constantly exploring ways to build smarter, more impactful digital experiences.</p>
+                </div>
+            </div>
         </div>
       </div>
     </>
