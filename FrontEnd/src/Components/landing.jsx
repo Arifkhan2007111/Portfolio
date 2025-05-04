@@ -12,35 +12,35 @@ const Landing = () => {
             <ul>
               <li>
                 <a href="#" className="underline-animate">
-                  Home
+                  home
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  About
+                  about
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  Skill
+                  skill
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  Project
+                  project
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  Connect
+                  connect
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="home">
-          <div className="home-div"></div>
-          <div className="home-div"></div>
+          <div className="home-div div_1"></div>
+          <div className="home-div div_2"></div>
           <h1 className="home-h1">HEY, I AM ARIF</h1>
           <h1 className="home-h1">A DEVLOPER</h1>
         </div>

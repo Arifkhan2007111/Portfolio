@@ -34,20 +34,24 @@ body{
     width: 100%;
     padding: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 999;
     background: rgba(0, 0, 0, 0.396);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* more subtle */
-box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
-
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
 }
 
 .logo{
+    padding-left: 4%;
     font-size: 2rem;
     cursor: default;
+}
+
+.components{
+    padding-right: 9%;
 }
 
 .components ul{
@@ -104,13 +108,32 @@ box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
     transform: rotate(45deg)
 }
 
+.home .div_2{
+    animation:  darkGlow 2s ease-in-out infinite;
+}
+
+@keyframes darkGlow {
+    0%, 100% {
+      box-shadow:
+        0 0 10px #B36228,
+        0 0 20px #B36228,
+        0 0 30px #703c1c,
+        0 0 40px #5c2e13;
+    }
+    50% {
+      box-shadow:
+        0 0 20px #D07936,
+        0 0 30px #b65a1b,
+        0 0 40px #743e1a,
+        0 0 50px #4b210c;
+    }
+  }
+
 .home .home-div:first-child{
     transform: rotate(90deg);
-    /* background-color: gray; */
 
     background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
     
 }
