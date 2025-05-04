@@ -152,6 +152,49 @@ body{
     transform: translate(290px, -150px);
 }
 
+.home_scroll {
+    position: absolute;
+    top: 85%;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+.scroll-animation::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    left: 110%;
+    bottom: 10px;
+    background-color: var(--animation);
+
+    animation: animate 1.5s ease-in-out infinite;
+    /* animation-delay: 5s; */
+}
+
+@keyframes animate {
+    0% {
+      left: 110%;
+      width: 0%;
+    }
+    20% {
+      left: 110%;
+      width: 120%;
+    }
+    40% {
+      left: 230%;
+      width: 0%;
+    }
+    50% {
+      left: 0%;
+      width: 0%;
+    }
+    100% {
+      left: 0%;
+      width: 0%;
+    }
+}
+
 /* HOME END */
 
 /* ABOUT START  */
