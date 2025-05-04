@@ -47,14 +47,15 @@ box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
 
 .logo{
     font-size: 2rem;
+    cursor: default;
 }
 
 .components ul{
     list-style: none;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
-    gap: 25px;
+    gap: 20%;
     justify-content: center;
     align-items: center;
 }
