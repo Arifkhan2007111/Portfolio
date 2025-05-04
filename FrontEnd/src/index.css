@@ -274,4 +274,13 @@ body{
     word-spacing: 1rem;
 }
 
+.skill-para h1{
+    color: var(--animation);
+    display: inline;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    word-spacing: 1rem;
+}
+
 /* SKILL END  */
