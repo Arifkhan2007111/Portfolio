@@ -60,9 +60,10 @@ const Landing = () => {
                 <div className="about-para">
                     <p>Hi, I'm Arif—a passionate and self-motivated full-stack web developer with a Diploma in Computer Science & Engineering from Dr. C.V. Raman University. I specialize in creating clean, responsive, and scalable web applications using modern technologies like the MERN stack. I completed a hands-on internship at the Academy of Skill Development, where I built full-stack projects, designed RESTful APIs, and collaborated using Git and GitHub.<br /><br />
 
-I’ve actively participated in both a hackathon and an ideathon, contributing to innovative solutions like GreenBridge, a project focused on sustainability through technology. Currently, I’m diving into Artificial Intelligence and Machine Learning, learning core concepts, algorithms, and Python-based implementation. I’m also building a solid foundation in Data Structures and Algorithms to improve my problem-solving and interview readiness.<br /><br />
+                      I’ve actively participated in both a hackathon and an ideathon, contributing to innovative solutions like GreenBridge, a project focused on sustainability through technology. Currently, I’m diving into Artificial Intelligence and Machine Learning, learning core concepts, algorithms, and Python-based implementation. I’m also building a solid foundation in Data Structures and Algorithms to improve my problem-solving and interview readiness.<br /><br />
 
-In parallel, I'm crafting a custom dark-themed portfolio website with smooth animations, written entirely in manual CSS. I love experimenting with new tools and frameworks, and I’m constantly exploring ways to build smarter, more impactful digital experiences.</p>
+                      In parallel, I'm crafting a custom dark-themed portfolio website with smooth animations, written entirely in manual CSS. I love experimenting with new tools and frameworks, and I’m constantly exploring ways to build smarter, more impactful digital experiences.
+                    </p>
                 </div>
             </div>
         </div>
