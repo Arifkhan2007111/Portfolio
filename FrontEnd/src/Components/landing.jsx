@@ -101,9 +101,10 @@ const Landing = () => {
           <div className="part-start">SKILL'S</div>
           <div className="skill-para">
             <p>
-            I specialize in full-stack web development using the MERN stack, with a strong foundation in responsive UI design, API integration, and clean code practices. I'm also comfortable with version control (Git/GitHub), and continuously learning new tools like TypeScript and Next.js.
+            I specialize in full-stack web development using the MERN stack, with a strong foundation in responsive UI design, API integration, and clean code practices. I'm also comfortable with version control <h1> (Git/GitHub)</h1>, and continuously learning new tools like <h1> TypeScript</h1> and <h1> Next.js</h1>.
             </p>
           </div>
+          
           
         </div>
       </div>
