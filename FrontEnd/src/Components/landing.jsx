@@ -68,7 +68,7 @@ const Landing = () => {
             </div>
             <div className="about-para">
               <p>
-                Hi, I'm Arif—a passionate and self-motivated full-stack web
+                Hi, I'm <h1>Arif</h1>—a passionate and self-motivated <h1>full-stack</h1> web
                 developer with a Diploma in Computer Science & Engineering from
                 Dr. C.V. Raman University. I specialize in creating clean,
                 responsive, and scalable web applications using modern
@@ -104,7 +104,7 @@ const Landing = () => {
             I specialize in full-stack web development using the MERN stack, with a strong foundation in responsive UI design, API integration, and clean code practices. I'm also comfortable with version control <h1> (Git/GitHub)</h1>, and continuously learning new tools like <h1> TypeScript</h1> and <h1> Next.js</h1>.
             </p>
           </div>
-          
+
           
         </div>
       </div>
