@@ -22,12 +22,17 @@ const Landing = () => {
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  Projects
+                  Skill
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  Services
+                  Project
+                </a>
+              </li>
+              <li>
+                <a href="#" className="underline-animate">
+                  Connect
                 </a>
               </li>
             </ul>
