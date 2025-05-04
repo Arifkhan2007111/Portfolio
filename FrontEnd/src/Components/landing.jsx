@@ -44,6 +44,10 @@ const Landing = () => {
           <h1 className="home-h1">HEY, I AM ARIF</h1>
           <h1 className="home-h1">A DEVLOPER</h1>
         </div>
+        <div className="home_scroll">
+          <div className="scroll-text">Scroll</div>
+          <div className="scroll-animation"></div>
+        </div>
 
         <div className="about">
             <div className="main-para">
