@@ -97,6 +97,15 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <div className="skill">
+          <div className="part-start">SKILL'S</div>
+          <div className="skill-para">
+            <p>
+            I specialize in full-stack web development using the MERN stack, with a strong foundation in responsive UI design, API integration, and clean code practices. I'm also comfortable with version control (Git/GitHub), and continuously learning new tools like TypeScript and Next.js.
+            </p>
+          </div>
+          
+        </div>
       </div>
     </>
   );
