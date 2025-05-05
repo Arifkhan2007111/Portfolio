@@ -105,7 +105,16 @@ const Landing = () => {
             </p>
           </div>
           <div className="hr"></div>
-          
+          <div className="skill-cards">
+            <h1>Languages</h1>
+            <div className="skill-types">
+              <p>JavaScript</p>
+              <p>C</p>
+              <p>C++</p>
+              <p>HTML</p>
+              <p>Python</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
