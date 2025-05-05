@@ -158,6 +158,10 @@ const Landing = () => {
             </div>
           </div>
         </div>
+
+        <div className="projects">
+          <div className="part-start">PROJECT'S</div>
+        </div>
       </div>
     </>
   );
