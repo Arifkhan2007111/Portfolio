@@ -302,5 +302,56 @@ body{
     0 12px 36px rgba(227, 142, 73, 0.9);
 }
 
+.skill-card-cont{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.skill-cards{
+    max-width: 25%;
+    margin-bottom: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-cards:hover{
+    /* border: 2px solid gray; */
+    border-radius: 10px;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #E38E49, 0 0 24px #E38E49;
+}
+
+.skill-cards h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.skill-cards .skill-types{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+}
+
+.skill-cards .skill-types p{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 2px 20px;
+    border: 2px solid var(--animation);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+
 
 /* SKILL END  */
