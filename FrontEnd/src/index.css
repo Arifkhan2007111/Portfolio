@@ -312,7 +312,7 @@ body{
 
 .skill-cards{
     max-width: 25%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
@@ -351,7 +351,10 @@ body{
     cursor: pointer;
 }
 
-
-
-
 /* SKILL END  */
+
+/* PROJECT START  */
+
+
+
+/* PROJECT END  */
