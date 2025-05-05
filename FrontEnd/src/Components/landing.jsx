@@ -105,14 +105,56 @@ const Landing = () => {
             </p>
           </div>
           <div className="hr"></div>
-          <div className="skill-cards">
-            <h1>Languages</h1>
-            <div className="skill-types">
-              <p>JavaScript</p>
-              <p>C</p>
-              <p>C++</p>
-              <p>HTML</p>
-              <p>Python</p>
+
+          <div className="skill-card-cont">
+
+            <div className="skill-cards">
+              <h1>Programming Languages</h1>
+              <div className="skill-types">
+                <p>JavaScript</p>
+                <p>C / C++</p>
+                <p>Python</p>
+                <p>HTML5</p>
+                <p>CSS3</p>
+              </div>
+            </div>
+            <div className="skill-cards">
+              <h1>Web Development</h1>
+              <div className="skill-types">
+                <p>React.js</p>
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>MongoDB</p>
+                <p>REST APIs</p>
+                <p>Git & GitHub</p>
+                <p>Tailwind CSS</p>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+            <div className="skill-cards">
+              <h1>Tools & Platforms</h1>
+              <div className="skill-types">
+                <p>VS Code</p>
+                <p>Postman</p>
+                <p>MongoDB Compass</p>
+                <p>Netlify / Vercel</p>
+              </div>
+            </div>
+            <div className="skill-cards">
+              <h1>UI/UX & Design</h1>
+              <div className="skill-types">
+                <p>Responsive Design</p>
+                <p>CSS Animations</p>
+                <p>Dark/Light Themes</p>
+              </div>
+            </div>
+            <div className="skill-cards">
+              <h1>Currently Learning</h1>
+              <div className="skill-types">
+                <p>Machine Learning (Python)</p>
+                <p>DSA in JS</p>
+                <p>Redux / React Query</p>
+              </div>
             </div>
           </div>
         </div>
