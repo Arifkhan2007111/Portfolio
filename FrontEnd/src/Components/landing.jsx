@@ -1,6 +1,7 @@
 import React from "react";
 
 import portfolio from "../assets/Portfolio-img.jpg";
+import influence from "../assets/influenceIQ.mp4"
 
 const Landing = () => {
   return (
@@ -161,6 +162,12 @@ const Landing = () => {
 
         <div className="projects">
           <div className="part-start">PROJECT'S</div>
+
+          <div className="project-list">
+            <div className="project1">
+              <video src={influence} autoPlay loop muted></video>
+            </div>
+          </div>
         </div>
       </div>
     </>
