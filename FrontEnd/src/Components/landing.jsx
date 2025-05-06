@@ -165,7 +165,11 @@ const Landing = () => {
 
           <div className="project-list">
             <div className="project1">
-              <video src={influence} autoPlay loop muted></video>
+              <div className="p1-video">
+                <video className="video" src={influence} autoPlay loop muted></video>
+              </div>
+              <h1>INFLUENCE IQ</h1>
+              <p>Influence Scoring System</p>
             </div>
           </div>
         </div>
