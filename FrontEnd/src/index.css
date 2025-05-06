@@ -355,6 +355,44 @@ body{
 
 /* PROJECT START  */
 
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.project-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.project1{
+    width: 80%;
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.project1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project1:hover{
+    border-radius: 12px;
+
+}
+
+.project1:hover video{
+    transform: scale(1.1);
+}
 
 /* PROJECT END  */
