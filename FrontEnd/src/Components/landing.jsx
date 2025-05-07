@@ -1,8 +1,9 @@
 import React from "react";
 
 import portfolio from "../assets/Portfolio-img.jpg";
-import influence from "../assets/influenceIQ.mp4"
-import green from "../assets/Greenbridge.png"
+import influence from "../assets/influenceIQ.mp4";
+import green from "../assets/Greenbridge.png";
+import codesen from "../assets/codesensei.mp4";
 
 const Landing = () => {
   return (
@@ -70,14 +71,14 @@ const Landing = () => {
             </div>
             <div className="about-para">
               <p>
-                Hi, I'm <h1>Arif</h1>—a passionate and self-motivated <h1>full-stack</h1> web
-                developer with a Diploma in Computer Science & Engineering from
-                Dr. C.V. Raman University. I specialize in creating clean,
-                responsive, and scalable web applications using modern
-                technologies like the MERN stack. I completed a hands-on
-                internship at the Academy of Skill Development, where I built
-                full-stack projects, designed RESTful APIs, and collaborated
-                using Git and GitHub.
+                Hi, I'm <h1>Arif</h1>—a passionate and self-motivated{" "}
+                <h1>full-stack</h1> web developer with a Diploma in Computer
+                Science & Engineering from Dr. C.V. Raman University. I
+                specialize in creating clean, responsive, and scalable web
+                applications using modern technologies like the MERN stack. I
+                completed a hands-on internship at the Academy of Skill
+                Development, where I built full-stack projects, designed RESTful
+                APIs, and collaborated using Git and GitHub.
                 <br />
                 <br />
                 I’ve actively participated in both a hackathon and an ideathon,
@@ -103,13 +104,16 @@ const Landing = () => {
           <div className="part-start">SKILL'S</div>
           <div className="skill-para">
             <p>
-            I specialize in full-stack web development using the MERN stack, with a strong foundation in responsive UI design, API integration, and clean code practices. I'm also comfortable with version control <h1> (Git/GitHub)</h1>, and continuously learning new tools like <h1> TypeScript</h1> and <h1> Next.js</h1>.
+              I specialize in full-stack web development using the MERN stack,
+              with a strong foundation in responsive UI design, API integration,
+              and clean code practices. I'm also comfortable with version
+              control <h1> (Git/GitHub)</h1>, and continuously learning new
+              tools like <h1> TypeScript</h1> and <h1> Next.js</h1>.
             </p>
           </div>
           <div className="hr"></div>
 
           <div className="skill-card-cont">
-
             <div className="skill-cards">
               <h1>Programming Languages</h1>
               <div className="skill-types">
@@ -167,7 +171,13 @@ const Landing = () => {
           <div className="project-list">
             <div className="project1 project">
               <div className="p1-video">
-                <video className="video" src={influence} autoPlay loop muted></video>
+                <video
+                  className="video"
+                  src={influence}
+                  autoPlay
+                  loop
+                  muted
+                ></video>
               </div>
               <h1>INFLUENCE IQ</h1>
               <p>Influence Scoring System</p>
@@ -193,8 +203,14 @@ const Landing = () => {
               </div>
             </div>
             <div className="project3 project">
-            <div className="p1-video">
-                <img src={green}></img>
+              <div className="p1-video p3-video">
+                <video
+                  className="video"
+                  src={codesen}
+                  autoPlay
+                  loop
+                  muted
+                ></video>
               </div>
               <h1>CODESENSEI AI</h1>
               <p className="pro2-p">Green Tech Network</p>
