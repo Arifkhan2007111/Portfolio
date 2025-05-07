@@ -3,7 +3,7 @@ import React from "react";
 import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4";
 import green from "../assets/Greenbridge.png";
-import codesen from "../assets/codesensei.mp4";
+import codesen from "../assets/codesensei.png";
 
 const Landing = () => {
   return (
@@ -204,22 +204,15 @@ const Landing = () => {
             </div>
             <div className="project3 project">
               <div className="p1-video p3-video">
-                <video
-                  className="video"
-                  src={codesen}
-                  autoPlay
-                  loop
-                  muted
-                ></video>
+                <img src={codesen}></img>
               </div>
-              <h1>CODESENSEI AI</h1>
-              <p className="pro2-p">Green Tech Network</p>
-              <div className="project2-p">
+              <h1 className="pro3-p">CODESENSEI AI</h1>
+              <p className="pro3-p">Microservice Architecture</p>
+              <div className="project3-p">
+                <p>MERN</p>
+                <p>Versel</p>
+                <p>Gemini API</p>
                 <p>2025</p>
-                <p>React</p>
-                <p>Node</p>
-                <p>Python</p>
-                <p>Firebase</p>
               </div>
             </div>
           </div>
