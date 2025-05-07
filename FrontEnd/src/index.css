@@ -338,10 +338,11 @@ body{
 .skill-cards .skill-types{
     display: flex;
     flex-flow: row wrap;
-    gap: 5%;
+    gap: 3%;
 }
 
-.skill-cards .skill-types p{
+.skill-types p{
+    display: inline;
     margin-bottom: 10px;
     font-size: 1.5rem;
     font-weight: 300;
@@ -382,12 +383,12 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
     overflow: hidden;
-    /* position: relative; */
     transition: all 0.3s ease-in-out;
 }
 
-.project1 .p1-video .video{
+.project .p1-video .video{
     width: 105%;
     height: 100%;
     object-fit: cover;
@@ -410,6 +411,56 @@ body{
 .project p{
     font-size: 1.9rem;
     font-weight: 300;
+}
+
+.p-types{
+    display: flex;
+    gap: 10px;
+}
+
+.project2{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 80%;
+}
+
+.project2 .p1-video{
+    width: 50%;
+}
+
+.project2 .p1-video img{
+    width: 100%;
+    filter: brightness(120%);
+    transition: all 0.3s ease-in-out;
+}
+
+.project2 .p1-video:hover img{
+    transform: scale(1.1);
+}
+
+.project2 .pro2-p{
+    position: absolute;
+    left: 50.8%;
+    top: 23%;
+}
+
+.project2-p{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 50.8%;
+    top: 35%;
+}
+
+.project2-p p{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2px 20px;
+    border: 2px solid var(--animation);
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 /* PROJECT END  */
