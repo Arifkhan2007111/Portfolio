@@ -2,6 +2,7 @@ import React from "react";
 
 import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4"
+import green from "../assets/Greenbridge.png"
 
 const Landing = () => {
   return (
@@ -170,6 +171,40 @@ const Landing = () => {
               </div>
               <h1>INFLUENCE IQ</h1>
               <p>Influence Scoring System</p>
+              <div className="skill-types p-types">
+                <p>2025</p>
+                <p>React</p>
+                <p>Node</p>
+                <p>Python</p>
+                <p>Firebase</p>
+              </div>
+            </div>
+            <div className="project2 project">
+              <div className="p1-video">
+                <img src={green}></img>
+              </div>
+              <h1>GREEN BRIDGE</h1>
+              <p className="pro2-p">Green Tech Network</p>
+              <div className="project2-p">
+                <p>2025</p>
+                <p>React</p>
+                <p>Node</p>
+                <p>Express</p>
+              </div>
+            </div>
+            <div className="project3 project">
+            <div className="p1-video">
+                <img src={green}></img>
+              </div>
+              <h1>CODESENSEI AI</h1>
+              <p className="pro2-p">Green Tech Network</p>
+              <div className="project2-p">
+                <p>2025</p>
+                <p>React</p>
+                <p>Node</p>
+                <p>Python</p>
+                <p>Firebase</p>
+              </div>
             </div>
           </div>
         </div>
