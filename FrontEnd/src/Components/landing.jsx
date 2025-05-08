@@ -217,6 +217,10 @@ const Landing = () => {
             </div>
           </div>
         </div>
+
+        <div className="contact">
+          <div className="part-start">CONNECT</div>
+        </div>
       </div>
     </>
   );
