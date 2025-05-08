@@ -218,8 +218,18 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="contact">
+        <div className="connect">
           <div className="part-start">CONNECT</div>
+          <div className="connect-form">
+            <form>
+              <label>NAME</label>
+              <input placeholder="Your Name"></input>
+              <label>EMAIL</label>
+              <input placeholder="Your Email"></input>
+              <label>MESSAGE</label>
+              <input placeholder="Your Message"></input>
+            </form>
+          </div>
         </div>
       </div>
     </>
