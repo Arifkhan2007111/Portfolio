@@ -520,7 +520,22 @@ body{
 
 /* CONNECT START  */
 
+.connect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.connect-part{
+    width: 80%;
+    display: flex;
+}
+
 .connect-form{
+    width: 40%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -529,10 +544,12 @@ body{
 .connect-form form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 .connect-form form input, textarea {
+    width: 80%;
     outline: none;
     border-radius: 7px;
     padding: 10px;
@@ -540,6 +557,11 @@ body{
     background-color: rgb(59, 59, 59);
     color: var(--animation);
     font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.connect-form form input:hover, textarea:hover{
+    scale: 1.01;
 }
 
 .connect-form form input::placeholder, textarea::placeholder{
@@ -547,6 +569,23 @@ body{
     opacity: 0.5;
 }
 
+.connect-form .btn{
+    width: 25%;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color:transparent;
+    color: var(--animation);
+    border: 2px solid var(--animation);
+    transition: all 0.3s ease-in-out;
+}
+
+.connect-form .btn:hover{
+    background-color: var(--animation);
+    color: #000000;
+    scale: 1.05;
+}
 
 /* CONNECT END  */
 
