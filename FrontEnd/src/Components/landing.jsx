@@ -221,13 +221,12 @@ const Landing = () => {
         <div className="connect">
           <div className="part-start">CONNECT</div>
           <div className="connect-form">
-            <form>
-              <label>NAME</label>
-              <input placeholder="Your Name"></input>
-              <label>EMAIL</label>
-              <input placeholder="Your Email"></input>
-              <label>MESSAGE</label>
-              <input placeholder="Your Message"></input>
+            <h1>CONTACT <span>ME!</span></h1>
+            <form action="#">
+              <input className="input" type="text" placeholder="Your Name"></input>
+              <input className="input" type="email" placeholder="Your Email"></input>
+              <textarea className="input" cols={30} rows={10} placeholder="Write Your Message"></textarea>
+              <button className="btn" type="submit">Send Message</button>
             </form>
           </div>
         </div>
