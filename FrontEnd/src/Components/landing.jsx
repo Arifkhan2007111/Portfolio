@@ -220,14 +220,17 @@ const Landing = () => {
 
         <div className="connect">
           <div className="part-start">CONNECT</div>
-          <div className="connect-form">
-            <h1>CONTACT <span>ME!</span></h1>
-            <form action="#">
-              <input className="input" type="text" placeholder="Your Name"></input>
-              <input className="input" type="email" placeholder="Your Email"></input>
-              <textarea className="input" cols={30} rows={10} placeholder="Write Your Message"></textarea>
-              <button className="btn" type="submit">Send Message</button>
-            </form>
+          <div className="connect-part">
+            <div className="connect-form">
+              <h1>CONTACT <span>ME!</span></h1>
+              <form action="#">
+                <input className="input" type="text" placeholder="Your Name"></input>
+                <input className="input" type="email" placeholder="Your Email"></input>
+                <textarea className="input" cols={30} rows={10} placeholder="Write Your Message"></textarea>
+                <button className="btn" type="submit">Send Message</button>
+              </form>
+            </div>
+            <div className="connect-details"></div>
           </div>
         </div>
       </div>
