@@ -615,5 +615,17 @@ body{
     color: var(--animation);
 }
 
+.contact-d2{
+    display: flex;
+    flex-direction: column;
+}
+
+.common a{
+    width: 100px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: gray;
+}
+
 /* CONNECT END  */
 
