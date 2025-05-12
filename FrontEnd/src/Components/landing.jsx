@@ -230,7 +230,11 @@ const Landing = () => {
                 <button className="btn" type="submit">Send Message</button>
               </form>
             </div>
-            <div className="connect-details"></div>
+            <div className="connect-details">
+              <div className="contact-d1"></div>
+              <div className="contact-d2"></div>
+              <div className="contact-d3"></div>
+            </div>
           </div>
         </div>
       </div>
