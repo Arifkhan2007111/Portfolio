@@ -548,6 +548,10 @@ body{
     gap: 10px;
 }
 
+.connect-form h1 span{
+    color: var(--animation);
+}
+
 .connect-form form input, textarea {
     width: 80%;
     outline: none;
