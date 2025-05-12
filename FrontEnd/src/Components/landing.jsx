@@ -231,9 +231,19 @@ const Landing = () => {
               </form>
             </div>
             <div className="connect-details">
-              <div className="contact-d1"></div>
-              <div className="contact-d2"></div>
-              <div className="contact-d3"></div>
+              <div className="contact-d1 common">
+                <h1>REACH <span>ME AT!</span></h1>
+                <p className="underline-animate">arif.dev.in18@gmail.com</p>
+              </div>
+              <div className="contact-d2 common">
+                <h1>MY DIGITAL FOOTPRINTS</h1>
+                <a>GitHub</a>
+                <a>LinkedIn</a>
+              </div>
+              <div className="contact-d3 common">
+                <h1>MY PLACE</h1>
+                <p>Patna,India</p>
+              </div>
             </div>
           </div>
         </div>
