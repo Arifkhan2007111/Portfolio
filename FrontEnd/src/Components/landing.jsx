@@ -237,8 +237,8 @@ const Landing = () => {
               </div>
               <div className="contact-d2 common">
                 <h1>MY DIGITAL FOOTPRINTS</h1>
-                <a>GitHub</a>
-                <a>LinkedIn</a>
+                <a className="underline-animate" target="_blank" href="https://github.com/Arifkhan2007111"> <i className="fab fa-github" style={{ color: '#ffffff', fontSize: '24px', cursor: 'pointer' }}></i> GitHub</a>
+                <a className="underline-animate" target="_blank" href="https://www.linkedin.com/in/md-arif-khan-b002742aa/">LinkedIn</a>
               </div>
               <div className="contact-d3 common">
                 <h1>MY PLACE</h1>
