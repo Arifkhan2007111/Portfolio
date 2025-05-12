@@ -520,6 +520,32 @@ body{
 
 /* CONNECT START  */
 
+.connect-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.connect-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.connect-form form input, textarea {
+    outline: none;
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(59, 59, 59);
+    color: var(--animation);
+    font-size: 1.1rem;
+}
+
+.connect-form form input::placeholder, textarea::placeholder{
+    color: var(--animation);
+    opacity: 0.5;
+}
 
 
 /* CONNECT END  */
