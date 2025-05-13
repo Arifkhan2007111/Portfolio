@@ -2,7 +2,13 @@
 :root{
     --textcolor: #ffffff;
     --animation: #E38E49;
+    --selection: #dab08d;
     --buttoncolor: #1F509A;
+}
+
+::selection {
+  background: var(--selection); /* Highlight color */
+  color: #000000;      /* Selected text color */
 }
 
 body{
@@ -39,7 +45,7 @@ body{
     position: fixed;
     z-index: 999;
     background: rgba(0, 0, 0, 0.396);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* more subtle */
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
 }
@@ -618,11 +624,9 @@ body{
 .contact-d2{
     display: flex;
     flex-direction: column;
-    
 }
 
 .common a{
-    width: 100px;
     margin-left: 5px;
     cursor: pointer;
     font-size: 1.5rem;
