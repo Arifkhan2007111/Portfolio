@@ -4,6 +4,8 @@ import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4";
 import green from "../assets/Greenbridge.png";
 import codesen from "../assets/codesensei.png";
+import git from "../assets/logo.png"
+import link from "../assets/social.png"
 
 const Landing = () => {
   return (
@@ -237,8 +239,14 @@ const Landing = () => {
               </div>
               <div className="contact-d2 common">
                 <h1>MY DIGITAL FOOTPRINTS</h1>
-                <a className="underline-animate" target="_blank" href="https://github.com/Arifkhan2007111"> <i className="fab fa-github" style={{ color: '#ffffff', fontSize: '24px', cursor: 'pointer' }}></i> GitHub</a>
-                <a className="underline-animate" target="_blank" href="https://www.linkedin.com/in/md-arif-khan-b002742aa/">LinkedIn</a>
+                <div className="d2-cont">
+                  <img src={git}></img>
+                  <a className="underline-animate" target="_blank" href="https://github.com/Arifkhan2007111">GitHub</a>
+                </div>
+                <div className="d2-cont">
+                  <img src={link}></img>
+                  <a className="underline-animate" target="_blank" href="https://www.linkedin.com/in/md-arif-khan-b002742aa/">LinkedIn</a>
+                </div>
               </div>
               <div className="contact-d3 common">
                 <h1>MY PLACE</h1>
