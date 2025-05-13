@@ -618,14 +618,28 @@ body{
 .contact-d2{
     display: flex;
     flex-direction: column;
+    
 }
 
 .common a{
     width: 100px;
+    margin-left: 5px;
     cursor: pointer;
     font-size: 1.5rem;
     color: gray;
 }
+
+.common img{
+    width: 25px;
+}
+
+.d2-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
 
 /* CONNECT END  */
 
