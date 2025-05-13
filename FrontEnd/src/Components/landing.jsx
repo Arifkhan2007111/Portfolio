@@ -7,6 +7,8 @@ import codesen from "../assets/codesensei.png";
 import git from "../assets/logo.png"
 import link from "../assets/social.png"
 
+import Timing from "./Timing";
+
 const Landing = () => {
   return (
     <>
@@ -251,6 +253,7 @@ const Landing = () => {
               <div className="contact-d3 common">
                 <h1>MY PLACE</h1>
                 <p>Patna,India</p>
+                <div><Timing /></div>
               </div>
             </div>
           </div>
