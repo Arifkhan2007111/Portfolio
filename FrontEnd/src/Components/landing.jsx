@@ -19,27 +19,27 @@ const Landing = () => {
             <ul>
               <li>
                 <a href="#" className="underline-animate">
-                  home
+                  Home
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  about
+                  About
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  skill
+                  Skill
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  project
+                  Project
                 </a>
               </li>
               <li>
                 <a href="#" className="underline-animate">
-                  connect
+                  Connect
                 </a>
               </li>
             </ul>
@@ -59,13 +59,7 @@ const Landing = () => {
         <div className="about">
           <div className="main-para">
             <p>
-              I use MongoDB, Express.js, React.js, and Node.js to create
-              cutting-edge, responsive online apps. From clear user interface to
-              backend logic, my goal is to create experiences that are quick,
-              easy to use, and functional. To keep up with the latest
-              technological advancements, I also strive to enhance my knowledge
-              of data structures and algorithms and investigate the potential of
-              artificial intelligence and machine learning.
+              I utilize MongoDB, Express.js, React.js, and Node.js to develop innovative and responsive web applications. My aim is to design experiences that are fast, user-friendly, and functional, covering everything from the clear user interface to backend logic. I also endeavor to expand my understanding of data structures and algorithms, as well as explore the possibilities of artificial intelligence and machine learning, in order to stay abreast of the latest technological developments.
             </p>
           </div>
           <div className="part-start">ABOUT ME</div>
@@ -75,31 +69,10 @@ const Landing = () => {
             </div>
             <div className="about-para">
               <p>
-                Hi, I'm <h1>Arif</h1>—a passionate and self-motivated{" "}
-                <h1>full-stack</h1> web developer with a Diploma in Computer
-                Science & Engineering from Dr. C.V. Raman University. I
-                specialize in creating clean, responsive, and scalable web
-                applications using modern technologies like the MERN stack. I
-                completed a hands-on internship at the Academy of Skill
-                Development, where I built full-stack projects, designed RESTful
-                APIs, and collaborated using Git and GitHub.
+                Hi, I’m <h1>Arif</h1>. I hold a Diploma in Computer Science & Engineering from Dr. C.V. Raman University and am a passionate, self-motivated <h1>full-stack</h1> web developer. I focus on developing clean, responsive, and scalable web applications with modern technologies such as the MERN stack. At the Academy of Skill Development, I completed a practical internship during which I built full-stack projects, designed RESTful APIs, and collaborated through Git and GitHub.
                 <br />
                 <br />
-                I’ve actively participated in both a hackathon and an ideathon,
-                contributing to innovative solutions like GreenBridge, a project
-                focused on sustainability through technology. Currently, I’m
-                diving into Artificial Intelligence and Machine Learning,
-                learning core concepts, algorithms, and Python-based
-                implementation. I’m also building a solid foundation in Data
-                Structures and Algorithms to improve my problem-solving and
-                interview readiness.
-                <br />
-                <br />
-                In parallel, I'm crafting a custom dark-themed portfolio website
-                with smooth animations, written entirely in manual CSS. I love
-                experimenting with new tools and frameworks, and I’m constantly
-                exploring ways to build smarter, more impactful digital
-                experiences.
+                My participation in both a hackathon and an ideathon has been proactive, where I contributed to innovative solutions such as GreenBridge, a project aimed at sustainability through technology. I am presently immersing myself in the fields of Artificial Intelligence and Machine Learning, studying fundamental principles, algorithms, and their implementation using Python. To enhance my problem-solving skills and prepare for interviews, I’m also establishing a strong grounding in Data Structures and Algorithms.
               </p>
             </div>
           </div>
@@ -108,11 +81,7 @@ const Landing = () => {
           <div className="part-start">SKILL'S</div>
           <div className="skill-para">
             <p>
-              I specialize in full-stack web development using the MERN stack,
-              with a strong foundation in responsive UI design, API integration,
-              and clean code practices. I'm also comfortable with version
-              control <h1> (Git/GitHub)</h1>, and continuously learning new
-              tools like <h1> TypeScript</h1> and <h1> Next.js</h1>.
+              My expertise lies in full-stack web development utilizing the MERN stack, and I have a solid grounding in <h1>responsive UI design</h1>, <h1>API integration</h1>, and clean coding practices. I am also at ease with version control <h1>(Git/GitHub)</h1> and am continuously acquiring knowledge of new tools, currently working with JavaScript, React.js, Node.js, Express.js, and MongoDB.
             </p>
           </div>
           <div className="hr"></div>
