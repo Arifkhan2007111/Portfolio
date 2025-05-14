@@ -1,4 +1,5 @@
 import React from "react";
+import Lenis from 'lenis'
 
 import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4";
@@ -10,6 +11,20 @@ import link from "../assets/social.png"
 import Timing from "./Timing";
 
 const Landing = () => {
+
+  const lenis = new Lenis({
+    autoRaf: true,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+
+
   return (
     <>
       <div className="main-container">
