@@ -647,6 +647,9 @@ body{
 .time{
     color: var(--animation);
     font-size: 2rem;
+    cursor: pointer;
 }
 /* CONNECT END  */
+
+
 
