@@ -72,7 +72,7 @@ const Landing = () => {
                 Hi, I’m <h1>Arif</h1>. I hold a Diploma in Computer Science & Engineering from Dr. C.V. Raman University and am a passionate, self-motivated <h1>full-stack</h1> web developer. I focus on developing clean, responsive, and scalable web applications with modern technologies such as the MERN stack. At the Academy of Skill Development, I completed a practical internship during which I built full-stack projects, designed RESTful APIs, and collaborated through Git and GitHub.
                 <br />
                 <br />
-                My participation in both a hackathon and an ideathon has been proactive, where I contributed to innovative solutions such as GreenBridge, a project aimed at sustainability through technology. I am presently immersing myself in the fields of Artificial Intelligence and Machine Learning, studying fundamental principles, algorithms, and their implementation using Python. To enhance my problem-solving skills and prepare for interviews, I’m also establishing a strong grounding in Data Structures and Algorithms.
+                My participation in both a hackathon and an ideathon has been proactive, where I contributed to innovative solutions such as GreenBridge, a project aimed at sustainability through technology. I am presently immersing myself in the fields of <h1>Artificial Intelligence</h1> and <h1>Machine Learning</h1>, studying fundamental principles, algorithms, and their implementation using Python. To enhance my problem-solving skills and prepare for interviews, I’m also establishing a strong grounding in Data Structures and Algorithms.
               </p>
             </div>
           </div>
@@ -227,6 +227,20 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        
+        <div className="footer">
+          <div className="footer-d1">
+            <p>Made with ❤️‍🔥 by <h1>Arif</h1> </p>
+          </div>
+          <div className="footer-d2">
+            <a href="#">Back to top</a>
+          </div>
+          <div className="footer-d3">
+            <p>© 2025 Arif — All rights reserved</p>
+            <p>All visuals are concept representations</p>
+          </div>
+        </div>
+
       </div>
     </>
   );
