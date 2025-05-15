@@ -38,7 +38,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background: rgba(0, 0, 0, 0.396);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -92,6 +92,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .home .home-div{
@@ -135,15 +136,25 @@ body{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
-.home .home-h1{
-    transform: translate(-320px, -150px);
+/* font-family: "Orbitron", sans-serif; */
+/* transform: translate(-320px, -150px); */
+
+.home-f{
     font-family: "Orbitron", sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
+    position: absolute;
 }
 
-.home .home-h1:nth-last-child(1){
-    transform: translate(290px, -150px);
+.hf{
+    left: 18%;
+    top: 30%;
 }
+
+.hs{
+    left: 64%;
+    top: 29.5%;
+}
+
 
 .home_scroll {
     position: absolute;

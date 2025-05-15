@@ -1,5 +1,6 @@
 import React from "react"
 import Lenis from 'lenis'
+import Typed from 'typed.js';
 
 import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4";
@@ -21,7 +22,21 @@ const Landing = () => {
 
   requestAnimationFrame(raf);
 
+  const el = React.useRef(null);
 
+  React.useEffect(() => {
+      const typed = new Typed(el.current, {
+        strings: ['DESIGNER', 'DEVELOPER', 'MERN STACK ENTHUSIAST', 'AI/ML LEARNER'],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true
+      });
+  
+      return () => {
+        // Destroy Typed instance during cleanup to stop animation
+        typed.destroy();
+      };
+    }, []);
 
   return (
     <>
@@ -61,8 +76,8 @@ const Landing = () => {
         <div className="home">
           <div className="home-div div_1"></div>
           <div className="home-div div_2"></div>
-          <h1 className="home-h1">HEY, I AM ARIF</h1>
-          <h1 className="home-h1">A DEVLOPER</h1>
+          <h1 className="home-f hf">HEY, I AM ARIF</h1>
+          <h1 className="home-f hs">A <span ref={el} /></h1>
         </div>
         <div className="home_scroll">
           <div className="scroll-text">Scroll</div>
