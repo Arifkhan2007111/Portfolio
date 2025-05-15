@@ -10,7 +10,7 @@ import link from "../assets/social.png"
 
 import Timing from "./Timing";
 
-  const lenis = new Lenis();
+const lenis = new Lenis();
 
 const Landing = () => {
 
