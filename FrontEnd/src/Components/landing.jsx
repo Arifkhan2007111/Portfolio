@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import Lenis from 'lenis'
 
 import portfolio from "../assets/Portfolio-img.jpg";
@@ -10,11 +10,9 @@ import link from "../assets/social.png"
 
 import Timing from "./Timing";
 
-const Landing = () => {
+  const lenis = new Lenis();
 
-  const lenis = new Lenis({
-    autoRaf: true,
-  });
+const Landing = () => {
 
   function raf(time) {
     lenis.raf(time);
