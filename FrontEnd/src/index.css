@@ -3,20 +3,15 @@
     --textcolor: #ffffff;
     --animation: #E38E49;
     --selection: #dab08d;
-    --buttoncolor: #1F509A;
 }
 
 ::selection {
-  background: var(--selection); /* Highlight color */
-  color: #000000;      /* Selected text color */
+  background: var(--selection);
+  color: #000000;
 }
 
 body{
     background-color: #000000;
-    /* background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-    background-size: 40px 40px;  */
     color: var(--textcolor);
     background-attachment: fixed;
 }
@@ -43,17 +38,16 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     background: rgba(0, 0, 0, 0.396);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* more subtle */
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1); /* glow effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
 }
 
 .logo{
     padding-left: 4%;
     font-size: 2rem;
-    cursor: default;
 }
 
 .components{
@@ -62,17 +56,13 @@ body{
 
 .components ul{
     list-style: none;
-    text-decoration: none;
-    font-size: 1rem;
     display: flex;
     gap: 20%;
     justify-content: center;
-    align-items: center;
 }
 
 .underline-animate {
     position: relative;
-    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -109,7 +99,6 @@ body{
     width: 550px;
     height: 550px;
     background-color: var(--animation);
-    
     border-radius: 20px;
     transform: rotate(45deg)
 }
@@ -137,11 +126,9 @@ body{
 
 .home .home-div:first-child{
     transform: rotate(90deg);
-
     background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-    
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .home .home-div:nth-last-child(1){
@@ -173,9 +160,7 @@ body{
     left: 110%;
     bottom: 10px;
     background-color: var(--animation);
-
     animation: animate 1.5s ease-in-out infinite;
-    /* animation-delay: 5s; */
 }
 
 @keyframes animate {
@@ -210,8 +195,6 @@ body{
     padding-top: 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10vh;
 }
 
@@ -219,7 +202,6 @@ body{
     text-align: center;
     font-size: 8rem;
     position: relative;
-    
 }
 
 .part-start::before,
@@ -329,7 +311,6 @@ body{
 }
 
 .skill-cards:hover{
-    /* border: 2px solid gray; */
     border-radius: 10px;
     transform: scale(1.05);
     box-shadow: 0 0 12px #E38E49, 0 0 24px #E38E49;
@@ -383,7 +364,6 @@ body{
 .project1{
     width: 80%;
 }
-
 
 .p1-video{
     display: flex;
@@ -643,12 +623,12 @@ body{
     align-items: center;
 }
 
-
 .time{
     color: var(--animation);
     font-size: 2rem;
     cursor: pointer;
 }
+
 /* CONNECT END  */
 
 /* FOOTER START  */
@@ -701,6 +681,3 @@ body{
 }
 
 /* FOOTER END  */
-
-
-
