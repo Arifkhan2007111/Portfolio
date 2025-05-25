@@ -598,6 +598,10 @@ body{
     gap: 5%;
 }
 
+.email{
+    width: 290px;
+}
+
 .common h1{
     font-size: 3rem;
 }
