@@ -1,20 +1,19 @@
-import React from "react"
-import Lenis from 'lenis'
-import Typed from 'typed.js';
+import React, { useState } from "react";
+import Lenis from "lenis";
+import Typed from "typed.js";
 
 import portfolio from "../assets/Portfolio-img.jpg";
 import influence from "../assets/influenceIQ.mp4";
 import green from "../assets/Greenbridge.png";
 import codesen from "../assets/codesensei.png";
-import git from "../assets/logo.png"
-import link from "../assets/social.png"
+import git from "../assets/logo.png";
+import link from "../assets/social.png";
 
 import Timing from "./Timing";
 
 const lenis = new Lenis();
 
 const Landing = () => {
-
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
@@ -25,17 +24,55 @@ const Landing = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
-      const typed = new Typed(el.current, {
-        strings: ['DESIGNER', 'DEVELOPER', 'MERN STACK ENTHUSIAST', 'AI/ML LEARNER'],
-        typeSpeed: 150,
-        backSpeed: 100,
-        loop: true
-      });
-  
-      return () => {
-        typed.destroy();
-      };
-    }, []);
+    const typed = new Typed(el.current, {
+      strings: [
+        "DESIGNER",
+        "DEVELOPER",
+        "MERN STACK ENTHUSIAST",
+        "AI/ML LEARNER",
+      ],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  const [response, setResponse] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSend = async (e) => {
+    e.preventDefault();
+    // console.log("Sending form data:", { name, email, message });
+    try {
+      const res = await fetch(
+        "http://localhost/portfolio_backend/backend.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+        }
+      );
+
+      const data = await res.json();
+      setResponse(data.message);
+
+    } catch (error) {
+      console.error("Error:", error);
+      setResponse("Something went wrong. Please try again later.");
+    }
+  };
 
   return (
     <>
@@ -76,7 +113,9 @@ const Landing = () => {
           <div className="home-div div_1"></div>
           <div className="home-div div_2"></div>
           <h1 className="home-f hf">HEY, I AM ARIF</h1>
-          <h1 className="home-f hs">A <span ref={el} /></h1>
+          <h1 className="home-f hs">
+            A <span ref={el} />
+          </h1>
         </div>
         <div className="home_scroll">
           <div className="scroll-text">Scroll</div>
@@ -86,7 +125,14 @@ const Landing = () => {
         <div className="about">
           <div className="main-para">
             <p>
-              I utilize MongoDB, Express.js, React.js, and Node.js to develop innovative and responsive web applications. My aim is to design experiences that are fast, user-friendly, and functional, covering everything from the clear user interface to backend logic. I also endeavor to expand my understanding of data structures and algorithms, as well as explore the possibilities of artificial intelligence and machine learning, in order to stay abreast of the latest technological developments.
+              I utilize MongoDB, Express.js, React.js, and Node.js to develop
+              innovative and responsive web applications. My aim is to design
+              experiences that are fast, user-friendly, and functional, covering
+              everything from the clear user interface to backend logic. I also
+              endeavor to expand my understanding of data structures and
+              algorithms, as well as explore the possibilities of artificial
+              intelligence and machine learning, in order to stay abreast of the
+              latest technological developments.
             </p>
           </div>
           <div className="part-start">ABOUT ME</div>
@@ -96,10 +142,25 @@ const Landing = () => {
             </div>
             <div className="about-para">
               <p>
-                Hi, I’m <h1>Arif</h1>. I hold a Diploma in Computer Science & Engineering from Dr. C.V. Raman University and am a passionate, self-motivated <h1>full-stack</h1> web developer. I focus on developing clean, responsive, and scalable web applications with modern technologies such as the MERN stack. At the Academy of Skill Development, I completed a practical internship during which I built full-stack projects, designed RESTful APIs, and collaborated through Git and GitHub.
+                Hi, I’m <h1>Arif</h1>. I hold a Diploma in Computer Science &
+                Engineering from Dr. C.V. Raman University and am a passionate,
+                self-motivated <h1>full-stack</h1> web developer. I focus on
+                developing clean, responsive, and scalable web applications with
+                modern technologies such as the MERN stack. At the Academy of
+                Skill Development, I completed a practical internship during
+                which I built full-stack projects, designed RESTful APIs, and
+                collaborated through Git and GitHub.
                 <br />
                 <br />
-                My participation in both a hackathon and an ideathon has been proactive, where I contributed to innovative solutions such as GreenBridge, a project aimed at sustainability through technology. I am presently immersing myself in the fields of <h1>Artificial Intelligence</h1> and <h1>Machine Learning</h1>, studying fundamental principles, algorithms, and their implementation using Python. To enhance my problem-solving skills and prepare for interviews, I’m also establishing a strong grounding in Data Structures and Algorithms.
+                My participation in both a hackathon and an ideathon has been
+                proactive, where I contributed to innovative solutions such as
+                GreenBridge, a project aimed at sustainability through
+                technology. I am presently immersing myself in the fields of{" "}
+                <h1>Artificial Intelligence</h1> and <h1>Machine Learning</h1>,
+                studying fundamental principles, algorithms, and their
+                implementation using Python. To enhance my problem-solving
+                skills and prepare for interviews, I’m also establishing a
+                strong grounding in Data Structures and Algorithms.
               </p>
             </div>
           </div>
@@ -108,7 +169,13 @@ const Landing = () => {
           <div className="part-start">SKILL'S</div>
           <div className="skill-para">
             <p>
-              My expertise lies in full-stack web development utilizing the MERN stack, and I have a solid grounding in <h1>responsive UI design</h1>, <h1>API integration</h1>, and clean coding practices. I am also at ease with version control <h1>(Git/GitHub)</h1> and am continuously acquiring knowledge of new tools, currently working with JavaScript, React.js, Node.js, Express.js, and MongoDB.
+              My expertise lies in full-stack web development utilizing the MERN
+              stack, and I have a solid grounding in{" "}
+              <h1>responsive UI design</h1>, <h1>API integration</h1>, and clean
+              coding practices. I am also at ease with version control{" "}
+              <h1>(Git/GitHub)</h1> and am continuously acquiring knowledge of
+              new tools, currently working with JavaScript, React.js, Node.js,
+              Express.js, and MongoDB.
             </p>
           </div>
           <div className="hr"></div>
@@ -222,42 +289,92 @@ const Landing = () => {
           <div className="part-start">CONNECT</div>
           <div className="connect-part">
             <div className="connect-form">
-              <h1>CONTACT <span>ME!</span></h1>
-              <form action="#">
-                <input className="input" type="text" placeholder="Your Name"></input>
-                <input className="input" type="email" placeholder="Your Email"></input>
-                <textarea className="input" cols={30} rows={10} placeholder="Write Your Message"></textarea>
-                <button className="btn" type="submit">Send Message</button>
+              <h1>
+                CONTACT <span>ME!</span>
+              </h1>
+              <form onSubmit={handleSend}>
+                <input
+                  required
+                  value={name}
+                  className="input"
+                  type="text"
+                  placeholder="Your Name"
+                  onChange={(e) => setName(e.target.value)}
+                ></input>
+                <input
+                  required
+                  value={email}
+                  className="input"
+                  type="email"
+                  placeholder="Your Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                ></input>
+                <textarea
+                  required
+                  value={message}
+                  className="input"
+                  cols={30}
+                  rows={10}
+                  placeholder="Write Your Message"
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+                <button className="btn" type="submit">
+                  Send Message
+                </button>
+                <p>{response}</p>
               </form>
             </div>
             <div className="connect-details">
               <div className="contact-d1 common">
-                <h1>REACH <span>ME AT!</span></h1>
-                <a href="mailto:arif.dev.in18@gmail.com" className="underline-animate email">arif.dev.in18@gmail.com</a>
+                <h1>
+                  REACH <span>ME AT!</span>
+                </h1>
+                <a
+                  href="mailto:arif.dev.in18@gmail.com"
+                  className="underline-animate email"
+                >
+                  arif.dev.in18@gmail.com
+                </a>
               </div>
               <div className="contact-d2 common">
                 <h1>MY DIGITAL FOOTPRINTS</h1>
                 <div className="d2-cont">
                   <img src={git}></img>
-                  <a className="underline-animate" target="_blank" href="https://github.com/Arifkhan2007111">GitHub</a>
+                  <a
+                    className="underline-animate"
+                    target="_blank"
+                    href="https://github.com/Arifkhan2007111"
+                  >
+                    GitHub
+                  </a>
                 </div>
                 <div className="d2-cont">
                   <img src={link}></img>
-                  <a className="underline-animate" target="_blank" href="https://www.linkedin.com/in/md-arif-khan-b002742aa/">LinkedIn</a>
+                  <a
+                    className="underline-animate"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/md-arif-khan-b002742aa/"
+                  >
+                    LinkedIn
+                  </a>
                 </div>
               </div>
               <div className="contact-d3 common">
                 <h1>MY PLACE</h1>
                 <p>Patna,India</p>
-                <div><Timing /></div>
+                <div>
+                  <Timing />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="footer">
           <div className="footer-d1">
-            <p>Made with ❤️‍🔥 by <h1>Arif</h1> </p>
+            <p>
+              Made with ❤️‍🔥 by <h1>Arif</h1>{" "}
+            </p>
           </div>
           <div className="footer-d2">
             <a href="#">Back to top</a>
@@ -267,7 +384,6 @@ const Landing = () => {
             <p>All visuals are concept representations</p>
           </div>
         </div>
-
       </div>
     </>
   );
