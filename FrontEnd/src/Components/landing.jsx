@@ -33,7 +33,6 @@ const Landing = () => {
       });
   
       return () => {
-        // Destroy Typed instance during cleanup to stop animation
         typed.destroy();
       };
     }, []);
@@ -234,7 +233,7 @@ const Landing = () => {
             <div className="connect-details">
               <div className="contact-d1 common">
                 <h1>REACH <span>ME AT!</span></h1>
-                <p className="underline-animate">arif.dev.in18@gmail.com</p>
+                <a href="mailto:arif.dev.in18@gmail.com" className="underline-animate email">arif.dev.in18@gmail.com</a>
               </div>
               <div className="contact-d2 common">
                 <h1>MY DIGITAL FOOTPRINTS</h1>
