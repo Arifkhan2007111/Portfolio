@@ -51,7 +51,7 @@ const Landing = () => {
     // console.log("Sending form data:", { name, email, message });
     try {
       const res = await fetch(
-        "https://portfolio-taupe-kappa-45.vercel.app",
+        "https://portfolio-backend-fc13.onrender.com",
         {
           method: "POST",
           headers: {
