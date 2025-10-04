@@ -67,7 +67,6 @@ const Landing = () => {
 
       const data = await res.json();
       setResponse(data.message);
-
     } catch (error) {
       console.error("Error:", error);
       setResponse("Something went wrong. Please try again later.");
