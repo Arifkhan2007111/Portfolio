@@ -82,34 +82,34 @@ const Landing = () => {
           <div className="components">
             <ul>
               <li>
-                <a href="#" className="underline-animate">
+                <a href="#home" className="underline-animate">
                   Home
                 </a>
               </li>
               <li>
-                <a href=".about" className="underline-animate">
+                <a href="#about" className="underline-animate">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="underline-animate">
+                <a href="#skill" className="underline-animate">
                   Skill
                 </a>
               </li>
               <li>
-                <a href="#" className="underline-animate">
+                <a href="#projects" className="underline-animate">
                   Project
                 </a>
               </li>
               <li>
-                <a href="#" className="underline-animate">
+                <a href="#connect" className="underline-animate">
                   Connect
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="home">
+        <div className="home" id="home">
           <div className="home-div div_1"></div>
           <div className="home-div div_2"></div>
           <h1 className="home-f hf">HEY, I AM ARIF</h1>
@@ -122,7 +122,7 @@ const Landing = () => {
           <div className="scroll-animation"></div>
         </div>
 
-        <div className="about">
+        <div className="about" id="about">
           <div className="main-para">
             <p>
               I utilize MongoDB, Express.js, React.js, and Node.js to develop
@@ -165,7 +165,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="skill">
+        <div className="skill" id="skill">
           <div className="part-start">SKILL'S</div>
           <div className="skill-para">
             <p>
@@ -232,7 +232,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="projects">
+        <div className="projects" id="projects">
           <div className="part-start">PROJECT'S</div>
 
           <div className="project-list">
@@ -285,7 +285,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className="connect">
+        <div className="connect" id="connect">
           <div className="part-start">CONNECT</div>
           <div className="connect-part">
             <div className="connect-form">
