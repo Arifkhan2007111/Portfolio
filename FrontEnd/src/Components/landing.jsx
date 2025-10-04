@@ -51,7 +51,7 @@ const Landing = () => {
     // console.log("Sending form data:", { name, email, message });
     try {
       const res = await fetch(
-        "https://portfolio-backend-fc13.onrender.com",
+        "https://portfolio-backend.onrender.com/index.php",
         {
           method: "POST",
           headers: {
