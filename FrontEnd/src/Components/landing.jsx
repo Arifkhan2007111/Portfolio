@@ -87,7 +87,7 @@ const Landing = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="underline-animate">
+                <a href=".about" className="underline-animate">
                   About
                 </a>
               </li>
