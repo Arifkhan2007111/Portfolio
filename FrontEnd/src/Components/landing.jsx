@@ -122,7 +122,7 @@ const Landing = () => {
           <div className="scroll-animation"></div>
         </div>
 
-        <div className="about" id="about">
+        <div className="about">
           <div className="main-para">
             <p>
               I utilize MongoDB, Express.js, React.js, and Node.js to develop
@@ -135,7 +135,7 @@ const Landing = () => {
               latest technological developments.
             </p>
           </div>
-          <div className="part-start">ABOUT ME</div>
+          <div className="part-start" id="about">ABOUT ME</div>
           <div className="about-me">
             <div className="about-img">
               <img src={portfolio}></img>
@@ -273,7 +273,7 @@ const Landing = () => {
               <div className="p1-video p3-video">
                 <img src={codesen}></img>
               </div>
-              <h1 className="pro3-p">CODESENSEI AI</h1>
+              <h1 className="pro3-h">CODESENSEI AI</h1>
               <p className="pro3-p">Microservice Architecture</p>
               <div className="project3-p">
                 <p>MERN</p>

@@ -10,6 +10,10 @@
   color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   color: var(--textcolor);
@@ -141,7 +145,7 @@ body {
 }
 
 .hf {
-  left: 18%;
+  left: 15%;
   top: 30%;
 }
 
@@ -204,6 +208,7 @@ body {
 }
 
 .part-start {
+  padding-top: 50px;
   text-align: center;
   font-size: 8rem;
   position: relative;
@@ -462,7 +467,7 @@ body {
   width: 45%;
   position: absolute;
   right: 0;
-  top: -170px;
+  top: -140px;
 }
 
 .p3-video img {
@@ -475,15 +480,15 @@ body {
   transform: scale(1.1);
 }
 
+.pro3-h{
+  position: absolute;
+  left: 27%;
+}
+
 .pro3-p {
   position: absolute;
   top: 70px;
-  left: 32.1%;
-}
-
-.project3 h1 {
-  left: 30%;
-  top: -20px;
+  left: 29%;
 }
 
 .project3-p {
